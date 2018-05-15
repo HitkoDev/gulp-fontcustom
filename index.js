@@ -105,7 +105,7 @@ module.exports = function(options) {
         args = toArgumentArray(options)
 
     // fontcustom compile /___tmp___ --output <output> [other options]
-    exec([cmd, input].concat(args).join(' '))
+    exec([cmd, input.replace(/\\/g, '/')].concat(args).join(' '))
       .then(getGeneratedFiles)
       .then(function(files) {
         // Create a partially applied function with a fixed 'file' argument
