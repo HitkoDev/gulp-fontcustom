@@ -1,5 +1,8 @@
 node_modules/
 .DS_Store
 .fontcustom-manifest.json
-npm-debug.log
+*.log
 test/results/
+index.js
+index.js.map
+index.d.ts

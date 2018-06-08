@@ -1,3 +1,6 @@
-*.log
+node_modules/
+.DS_Store
 .fontcustom-manifest.json
-test/
+*.log
+test/results/
+index.ts
